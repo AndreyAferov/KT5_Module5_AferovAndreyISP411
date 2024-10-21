@@ -15,6 +15,8 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid  Grid.Row="0" Background="#FF76E383">
+            <Image Source="/Resources/logo.png"  HorizontalAlignment="Left" Margin="150,0,0,0"/>
+
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" Content="Прокат спортивного инвентаря"></Label>
         </Grid>
         <Frame  Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" ></Frame>

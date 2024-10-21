@@ -5,10 +5,57 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SportInventory.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditPage">
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="AddEditPage"
+      Background="white">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Id:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="0"/>
+        <Label Content="Фамилия:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Имя:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0"/>
+        <Label Content="Отчество:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="0"/>
+        <Label Content="Должность:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="4" Grid.Column="0"/>
+        <Label Content="Дата рождения:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="5" Grid.Column="0"/>
+        <Label Content="Телефон:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="2"/>
+        <Label Content="Пол:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="2"/>
+        <Label Content="Email:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="2"/>
+        <Label Content="Логин:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="2"/>
+        <Label Content="Пароль:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="4" Grid.Column="2"/>
+        <Label Content="Подтверждение пароля:" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Row="5" Grid.Column="2"/>
+
         
+        
+        <TextBox x:Name="IdTextBox" Grid.Row="0" Grid.Column="1" IsReadOnly="True"/>
+        <TextBox x:Name="Surname" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="Name" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="Patronymic" Grid.Row="3" Grid.Column="1"/>
+        <ComboBox x:Name="RoleCombo" Grid.Row="4" Grid.Column="1"/>
+        <DatePicker x:Name="BirthDate" Grid.Row="5" Grid.Column="1"/>
+        <TextBox x:Name="Phone" Grid.Row="1" Grid.Column="3"/>
+        <ComboBox x:Name="GenderComboBox" Grid.Row="2" Grid.Column="3"/>
+        <TextBox x:Name="Email" Grid.Row="0" Grid.Column="3"/>
+        <TextBox x:Name="Login" Grid.Row="3" Grid.Column="3"/>
+        <PasswordBox x:Name="Password" Grid.Row="4" Grid.Column="3"/>
+        <PasswordBox x:Name="ConfirmPassword" Grid.Row="5" Grid.Column="3"/>
+
+        
+        <Button Content="Назад" x:Name="BackButton" Grid.Row="9" Grid.Column="0" Click="BackButton_Click"/>
+        <Button Content="Сохранить" x:Name="SaveButton" Grid.Row="9" Grid.Column="3" Click="SaveButton_Click"/>
     </Grid>
 </Page>
