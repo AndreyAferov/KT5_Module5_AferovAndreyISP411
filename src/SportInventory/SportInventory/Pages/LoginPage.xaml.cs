@@ -47,14 +47,17 @@ namespace SportInventory.Pages
                if(Data.SportsEntities.GetContext().User.Any(d=> d.Login == LoginBox.Text && d.Password == PasswordBox.Password))
                 {
                     Manager.MainFrame.Navigate(new ViewPage());
-                    MessageBox.Show("Успех!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Приветствую вас вы зашли успешно!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
                     MessageBox.Show("Неправильный логин или пароль", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch { }
+            catch {
+                MessageBox.Show("Ошибка!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
         }
     }
 }

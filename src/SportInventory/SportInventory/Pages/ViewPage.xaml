@@ -20,18 +20,19 @@
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="350"></ColumnDefinition>
                             <ColumnDefinition Width="300"></ColumnDefinition>
-                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel>
                             <TextBlock Text="{Binding Surname, StringFormat={} Фамилия {0}}"></TextBlock>
                             <TextBlock Text="{Binding Name, StringFormat={} Имя {0}}"></TextBlock>
                             <TextBlock Text="{Binding Patronomyc, StringFormat={} Отчество {0}}"></TextBlock>
                             <TextBlock Text="{Binding Email, StringFormat={} Email {0}}"></TextBlock>
-                            <TextBlock Text="{Binding DateBirth, StringFormat={} Дата Рождения {0}}"></TextBlock>
+                            <TextBlock Text="{Binding DateBirth, StringFormat={} Дата Рождения {0:dd.MM.yyyy}, TargetNullValue='Дата не указана'}" />
                             <TextBlock Text="{Binding PhoneNumber, StringFormat={} Номер телефона {0}}"></TextBlock>
                         </StackPanel>
-                        <TextBlock Grid.Column="1" Text="{Binding Role1.NameRole, StringFormat={} Должность: {0}}"></TextBlock>
+                        <TextBlock VerticalAlignment="Center" Grid.Column="1" Text="{Binding Role1.NameRole, StringFormat={} Должность: {0}}"></TextBlock>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

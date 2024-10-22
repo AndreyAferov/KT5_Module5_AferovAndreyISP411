@@ -17,6 +17,18 @@
             <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
             <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
         </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="Width" Value="170"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="Width" Value="170"></Setter>
+        </Style>
         <Style TargetType="PasswordBox">
             <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
             <Setter Property="Height" Value="35"></Setter>
